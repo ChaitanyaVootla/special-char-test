@@ -1,0 +1,8 @@
+pipelines: 
+  - name: pipe-special-char/test
+    steps:
+      - name: special-char/test
+        type: Bash
+        execution:
+          onExecute:
+            - echo "done"
